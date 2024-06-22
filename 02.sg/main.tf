@@ -215,6 +215,7 @@ resource "aws_security_group_rule" "bastion_public" {
   security_group_id = module.bastion.sg_id
 }
 
+#added as part of Jenkins CICD
 resource "aws_security_group_rule" "backend_default_vpc" {
   type              = "ingress"
   from_port         = 22
